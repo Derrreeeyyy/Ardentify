@@ -1,5 +1,4 @@
 import streamlit as st
-from ultralytics import YOLO
 from PIL import Image
 import pickle
 
@@ -36,3 +35,4 @@ def main():
 
 
 main()
+
