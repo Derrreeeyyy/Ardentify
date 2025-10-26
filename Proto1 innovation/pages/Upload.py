@@ -1,5 +1,4 @@
 import streamlit as st
-from ultralytics import YOLO
 from PIL import Image
 import pickle
 
@@ -35,3 +34,4 @@ def main():
     "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 main()
+
