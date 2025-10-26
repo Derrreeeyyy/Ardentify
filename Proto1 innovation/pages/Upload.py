@@ -33,5 +33,9 @@ def main():
     "company/organization, where you found the artifact "
     "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
+if response:
+    st.write("thank you for your submission")
+
 main()
+
 
