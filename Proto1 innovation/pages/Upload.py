@@ -1,9 +1,7 @@
 import streamlit as st
+from ultralytics import YOLO
 from PIL import Image
 import pickle
-
-
-model = pickle.load(model_file) # Load the model from the file
 
 
 
@@ -30,9 +28,10 @@ def main():
     image = Image.open(File)
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
- if st.button("Detect Objects"):
-  model.predict(image)
-
+ if st.button("upload"):
+    response = st.text_area ("Please enter: contact details," \
+    "Secondary contact details, name, " \
+    "company/organization, where you found the artifact "
+    "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 main()
-
