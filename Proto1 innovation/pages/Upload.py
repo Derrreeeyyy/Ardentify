@@ -1,4 +1,4 @@
-import streamlit as st
+qcimport streamlit as st
 from PIL import Image
 import pickle
 
@@ -35,12 +35,12 @@ def main():
     "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
     finalise = st.button("submit")
 
-    if finalise:
-     st.success("Submission complete! Thank you for your contribution to archeology.")
+if finalise:
+    st.success("Submission complete! Thank you for your contribution to archeology.")
 
 
-     
 main()
+
 
 
 
