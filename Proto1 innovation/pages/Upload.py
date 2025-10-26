@@ -33,13 +33,15 @@ def main():
     "Secondary contact details, name, " \
     "company/organization, where you found the artifact, hashtag/theme "
     "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
-    finalise = st.button("submit")
+
+finalise = st.button("submit")
 
 if finalise:
     st.success("Submission complete! Thank you for your contribution to archeology.")
 
 
 main()
+
 
 
 
