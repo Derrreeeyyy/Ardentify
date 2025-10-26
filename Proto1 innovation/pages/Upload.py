@@ -26,7 +26,7 @@ def main():
  if File is not None:
     image = Image.open(File)
     st.image(image, caption="Uploaded Image", use_column_width=True)
-    upload = st.button("continue submission")
+upload = st.button("continue submission")
 
  if upload:
     st.text_area ("Please enter: contact details," \
@@ -41,6 +41,7 @@ if finalise:
 
 
 main()
+
 
 
 
