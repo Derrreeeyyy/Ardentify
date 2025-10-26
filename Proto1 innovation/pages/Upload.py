@@ -26,14 +26,22 @@ def main():
  if File is not None:
     image = Image.open(File)
     st.image(image, caption="Uploaded Image", use_column_width=True)
+    upload = st.button("continue submission")
 
- if st.button("upload"):
-    response = st.text_area ("Please enter: contact details," \
+ if upload:
+    st.text_area ("Please enter: contact details," \
     "Secondary contact details, name, " \
-    "company/organization, where you found the artifact "
+    "company/organization, where you found the artifact, hashtag/theme "
     "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
+    finalise = st.button("submit")
 
+    if finalise:
+     st.success("Submission complete! Thank you for your contribution to archeology.")
+
+
+     
 main()
+
 
 
 
