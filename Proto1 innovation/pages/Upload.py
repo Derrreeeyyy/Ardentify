@@ -12,7 +12,7 @@ def start():
     """)
 def main():
  start()
- File = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"], accept_multiple_files=False,on_change=processing)
+ File = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"], accept_multiple_files=False, key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
 
  if File is not None:
     image = Image.open(File)
@@ -32,6 +32,7 @@ def main():
 
 
 main()
+
 
 
 
