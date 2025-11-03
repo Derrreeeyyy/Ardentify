@@ -23,23 +23,7 @@ def main():
     st.text_area ("Please enter: contact details," \
     "Secondary contact details, name, " \
     "company/organization, where you found the artifact, hashtag/theme "
-    "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
-
- finalise = st.button("submit")
-
- if finalise:
-     st.write("Submission complete! Thank you for your contribution to archeology.")
+    "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch", on_submit= st.write("Submitted thank you for contributing"), type="default")
 
 
 main()
-
-
-
-
-
-
-
-
-
-
-
