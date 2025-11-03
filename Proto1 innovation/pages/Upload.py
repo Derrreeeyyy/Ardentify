@@ -28,10 +28,11 @@ def main():
  finalise = st.button("submit")
 
  if finalise:
-     st.success("Submission complete! Thank you for your contribution to archeology.")
+     st.write("Submission complete! Thank you for your contribution to archeology.")
 
 
 main()
+
 
 
 
