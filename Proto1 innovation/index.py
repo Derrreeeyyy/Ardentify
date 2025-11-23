@@ -7,11 +7,11 @@ st.subheader("Upload live Photo of " \
 st.write("Please upload a photo of the " \
 "artifact.")
 
-st.image()
 st.button("Check out professor Cooper's" \
 "Article on an ancient boomerang.")
 
 st.sidebar.success("scan type")
+
 
 
 
