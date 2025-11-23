@@ -26,13 +26,14 @@ What artifacts were found near it
 What type of artifact is it
 What type of area/dig site was it found in (climate/biome) 
 What the artifact is
-Did you find it or did someone else find it?", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
+Did you find it or did someone else find it?"), value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 
 
 
 
 main()
+
 
 
 
