@@ -17,15 +17,14 @@ def main():
  if File is not None:
     image = Image.open(File)
     st.image(image, caption="Uploaded Image", use_column_width=True)
- upload = st.button("continue submission")
-
- def yap():
-    st.write("Thank you for your submission")
-
- if upload:
     st.text_area ("Please enter: contact details, Secondary contact details, name, company/organization, where you found the artifact, hashtag/theme  and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch", type="default")
 
+
+
+
+
 main()
+
 
 
 
