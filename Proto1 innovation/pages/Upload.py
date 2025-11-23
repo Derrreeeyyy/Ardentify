@@ -7,9 +7,6 @@ def start():
     st.title("ARDENTIFY")
     st.subheader("Image upload")
     st.write("upload image of artifact")
-    st.write("""
-
-    """)
 def main():
  start()
  File = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"], accept_multiple_files=False, key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
@@ -33,6 +30,7 @@ def main():
 
 
 main()
+
 
 
 
