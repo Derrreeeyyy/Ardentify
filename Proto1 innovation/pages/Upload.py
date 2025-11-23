@@ -17,13 +17,23 @@ def main():
  if File is not None:
     image = Image.open(File)
     st.image(image, caption="Uploaded Image", use_column_width=True)
-    st.text_area ("Please enter: contact details, Secondary contact details, name, company/organization, where you found the artifact, hashtag/theme  and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
+    st.text_area ("What do you think the age of the artifact is
+Where it is found at (longitude, latitude, place names) 
+Characteristics (shapes, size)
+How deep was it found
+How many artifacts were near it
+What artifacts were found near it
+What type of artifact is it
+What type of area/dig site was it found in (climate/biome) 
+What the artifact is
+Did you find it or did someone else find it?", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 
 
 
 
 main()
+
 
 
 
