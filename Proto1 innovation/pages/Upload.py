@@ -23,10 +23,8 @@ def main():
     st.write("Thank you for your submission")
 
  if upload:
-    st.text_area ("Please enter: contact details," \
-    "Secondary contact details, name, " \
-    "company/organization, where you found the artifact, hashtag/theme "
-    "and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch", on_submit= yap, type="default")
+    st.text_area ("Please enter: contact details, Secondary contact details, name, company/organization, where you found the artifact, hashtag/theme  and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch", on_submit= yap, type="default")
 
 main()
+
 
