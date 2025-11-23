@@ -17,13 +17,14 @@ def main():
  if File is not None:
     image = Image.open(File)
     st.image(image, caption="Uploaded Image", use_column_width=True)
-    st.text_area ("Please enter: contact details, Secondary contact details, name, company/organization, where you found the artifact, hashtag/theme  and key notes", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch", type="default")
+    st.text_area ("Please enter: contact details, Secondary contact details, name, company/organization, where you found the artifact, hashtag/theme  and key notes", value="str", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 
 
 
 
 main()
+
 
 
 
