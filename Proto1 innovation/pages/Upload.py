@@ -16,13 +16,12 @@ def main():
     st.image(image, caption="Uploaded Image", use_column_width=True)
     st.text_area( ("What is it:"), value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
-text = st.button("Continue submission")
-
-if text:
+if st.button(""continue submission):
     st.text_area("Please enter your: Name,Primary contact details, secondary contact details, location of find and work location", value="John Citizen, John@gmail.com, 1234567, USA, USA", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 
 main()
+
 
 
 
