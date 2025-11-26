@@ -14,11 +14,7 @@ def main():
  if File is not None:
     image = Image.open(File)
     st.image(image, caption="Uploaded Image", use_column_width=True)
-    st.text_area( ("What is it:"), value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
-
-    st.button("continue submission", key=None, help=None, on_click= st.text_area("Please enter your: Name,Primary contact details, secondary contact details, location of find and work location", value="John Citizen, John@gmail.com, 1234567, USA, USA", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
-    , args=None, kwargs=None, *, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")
-
+    st.text_area("Please enter your: Name,Primary contact details, secondary contact details, location of find and work location", value="John Citizen, John@gmail.com, 1234567, USA, USA", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 main()
 
