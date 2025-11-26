@@ -16,10 +16,11 @@ def main():
 
  submit =  st.button("continue submission", key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")
  if submit:
-  st.text_area("Name ,primary contact details, Secondary contact details, country and address of find and company/organisation", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
+ st.text_area("Name ,primary contact details, Secondary contact details, country and address of find and company/organisation", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
 
 
 main()
+
 
 
 
