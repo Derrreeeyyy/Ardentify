@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import pickle
 
 
 def start():
@@ -13,10 +12,15 @@ def main():
 
  if File is not None:
     image = Image.open(File)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
-    st.text_area("Please enter your: Name,Primary contact details, secondary contact details, location of find and work location", value="John Citizen, John@gmail.com, 1234567, USA, USA", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
+     st.image(image, caption=None, width="content", use_column_width=None, clamp=False, channels="RGB", output_format="auto", *, use_container_width=None)
+
+ submit =  st.button("continue submission", key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")
+ if submit:
+  st.text_area("Name ,primary contact details, Secondary contact details, country and address of find and company/organisation", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", width="stretch")
+
 
 main()
+
 
 
 
