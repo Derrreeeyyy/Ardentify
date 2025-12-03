@@ -13,7 +13,7 @@ def endpage():
     st.button("submit again", key=None, help=None, on_click=first(), args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")
 
 def main():
- def end(): st.session_state = 1
+ def end(): st.session_state = 67
  if st.session_state == 0:
      
      start()
@@ -28,12 +28,13 @@ def main():
         st.text_input("Country and address of digsite/find", value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", icon=None, width="stretch")
         st.text_input("Company/organisation", value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", icon=None, width="stretch")
         end = st.button("Submit", key=None, help=None, on_click=end(), args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")  
- elif st.session_state == 1:
+ elif st.session_state == 67:
     endpage()
         
 
 
 main()
+
 
 
 
