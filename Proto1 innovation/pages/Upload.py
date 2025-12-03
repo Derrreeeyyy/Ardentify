@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 
 def first():  st.session_state = 0
-def end():  st.session_state = 1
 
 def start():
     st.title("ARDENTIFY")
@@ -14,6 +13,7 @@ def endpage():
     st.button("submit again", key=None, help=None, on_click=first(), args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")
 
 def main():
+ def end(): session_state = 1
  if st.session_state == 0:
      
      start()
@@ -34,6 +34,7 @@ def main():
 
 
 main()
+
 
 
 
