@@ -1,8 +1,8 @@
 import streamlit as st
 from PIL import Image
 
-def first():  st.session_state.page = 0
-def end():  st.session_state = 1
+def first():  st.session_state.Upload = 0
+def end():  st.session_state.Upload = 1
 
 def start():
     st.title("ARDENTIFY")
@@ -14,7 +14,7 @@ def endpage():
     st.button("submit again", key=None, help=None, on_click=first(), args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")
 
 def main():
- if st.session_state.page == 0:
+ if st.session_state.Upload == 0:
      
      start()
      File = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"], accept_multiple_files=False, key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
@@ -28,12 +28,13 @@ def main():
         st.text_input("Country and address of digsite/find", value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", icon=None, width="stretch")
         st.text_input("Company/organisation", value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", icon=None, width="stretch")
         end = st.button("Submit", key=None, help=None, on_click=end(), args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")  
- elif st.session_state.page == 1:
+ elif st.session_state.Upload == 1:
     endpage()
         
 
 
 main()
+
 
 
 
