@@ -24,13 +24,12 @@ def main():
     st.text_input("Company/organisation", value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", icon=None, width="stretch")
     end = st.button("Submit", key=None, help=None, on_click=None, args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=None, width="content")
  return
-
-if end:
-        endpage()
+ endpage()
         
 
 
 main()
+
 
 
 
