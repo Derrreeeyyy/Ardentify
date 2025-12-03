@@ -12,7 +12,7 @@ def endpage():
     st.title("Thank you for contributing to the wider archeology community!!!")
 
 def main():
-st.session_state.page = 0
+ st.session_state.page = 0
  start()
  File = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"], accept_multiple_files=False, key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
 
@@ -30,6 +30,7 @@ st.session_state.page = 0
 
 
 main()
+
 
 
 
