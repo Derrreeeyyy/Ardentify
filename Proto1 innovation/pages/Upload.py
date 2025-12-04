@@ -15,7 +15,7 @@ def endpage():
 def main():
     start()
     File = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"], accept_multiple_files=False, key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
-    if File not None:
+    if File if not None:
             image = Image.open(File)
             st.image(image, caption=None, width="content", use_column_width=None, clamp=False, channels="RGB", output_format="auto", use_container_width=None)
             st.text_input("Name", value="", max_chars=45, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="visible", icon=None, width="stretch")
@@ -28,6 +28,7 @@ def main():
         
 
 main()
+
 
 
 
